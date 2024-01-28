@@ -2,9 +2,9 @@ const { connectDb } = require("./config/db")
 const app =require("./index")
 
 
-const PORT = 4000
-app.listen(PORT, async()=> {
+const port = process.env.PORT || 3000;
+app.listen(port, async()=> {
     await connectDb()
-    console.log("server started on ", PORT)
+    console.log("server started on ", port)
 })
 
