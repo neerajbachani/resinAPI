@@ -1,10 +1,11 @@
 {
    "version": 2,
-   "name": "resinart-node-api",
-   "rewrites": [
-     { "source": "^/$", "destination": "/index.js" },
-     { "source": "/(.*)", "destination": "/server.js" }
+   "name": "nodejs-express",
+   "builds": [
+       { "src": "server.js", "use": "@now/node" }
+   ],
+   "routes": [
+       { "src": "/(.*)", "dest": "index.js" }
    ]
 }
-
 
