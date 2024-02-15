@@ -1,11 +1,8 @@
 {
    "version": 2,
    "name": "resinart-node-api",
-   "builds": [
-     { "src": "server.js", "use": "@vercel/node", "config": { "nodeVersion": "16.x" } }
-   ],
-   "routes": [
-     { "src": "/(.*)", "dest": "/server.js" }
+   "rewrites": [
+     { "source": "/(.*)", "destination": "/server.js" }
    ]
  }
  
