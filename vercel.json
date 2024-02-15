@@ -2,7 +2,8 @@
    "version": 2,
    "name": "resinart-node-api",
    "routes": [
-     { "src": "/index.js", "dest": "/server.js" },
-     { "src": "/(.*)", "dest": "/server.js" }
+     { "src": "/server.js", "dest": "/server.js" },
+     { "src": "/", "dest": "/index.js" }
    ]
 }
+
