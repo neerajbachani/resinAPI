@@ -2,10 +2,10 @@
    "version": 2,
    "name": "nodejs-express",
    "builds": [
-       { "src": "src/server.js", "use": "@now/node" }
+       { "src": "src/index.js", "use": "@now/node" }
    ],
    "routes": [
-       { "src": "/(.*)", "dest": "src/server.js" }
+       { "src": "/(.*)", "dest": "src/index.js" }
    ]
 }
 
