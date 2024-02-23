@@ -10,9 +10,9 @@ app.use(express.json())
 app.use(cors())
 
 
-app.get('/',(req,res)=> {
-    return res.status(200).send({message: "helo ji", status: true})
-})
+// app.get('/',(req,res)=> {
+//     return res.status(200).send({message: "helo ji", status: true})
+// })
 
 // const authRouters = require("./routes/authRoute")
 // app.use('/auth',authRouters)
